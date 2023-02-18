@@ -1,0 +1,115 @@
+.slider 
+{
+    margin: 0 auto;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slides
+{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input 
+{
+    display: none;
+}
+
+.slide
+{
+    width: 25%;
+    position: relative;
+    transition: 1s;
+}
+.slide img
+{
+    width: 400px;
+    height: 600px;
+}
+
+.manual-navigator
+{
+    position: absolute;
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    bottom: 0;
+}
+
+.manual-btn
+{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+.manual-btn:hover
+{
+    background-color: #fff;
+}
+
+#img1:checked ~ .first
+{
+    margin-left: 0%;
+}
+#img2:checked ~ .first
+{
+    margin-left: -25%;
+}
+#img3:checked ~ .first
+{
+    margin-left: -50%;
+}
+#img4:checked ~ .first
+{
+    margin-left: -75%;
+}
+#img5:checked ~ .first
+{
+    margin-left: -100%;
+}
+
+.navegator-auto
+{
+    position: absolute;
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    bottom: 0;
+}
+
+.navegator-auto div
+{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#img1:checked ~ .navegator-auto .auto-btn1
+{
+    background-color: #fff;
+}
+#img2:checked ~ .navegator-auto .auto-btn2
+{
+    background-color: #fff;
+}
+#img3:checked ~ .navegator-auto .auto-btn3
+{
+    background-color: #fff;
+}
+#img4:checked ~ .navegator-auto .auto-btn4
+{
+    background-color: #fff;
+}
+#img5:checked ~ .navegator-auto .auto-btn5
+{
+    background-color: #fff;
+}
