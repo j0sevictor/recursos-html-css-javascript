@@ -1,0 +1,85 @@
+.lista
+{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+.item
+{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 70vh;
+}
+.item > div
+{
+    border: 1px solid gray;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.imagem
+{
+    position: relative;
+    overflow: hidden;
+    height: 50%;
+}
+.imagem img
+{
+    width: 100%;
+}
+
+.descricao
+{
+    display: flex;
+    flex-direction: column;
+}
+.titulo
+{
+    width: 100%;
+    text-align: left;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+.texto
+{
+    width: 100%;
+    text-align: left;
+    font-size: small;
+}
+
+.precos
+{
+    display: flex;
+    gap: 5px;
+    flex-wrap: nowrap;
+}
+.lista-precos
+{
+    width: 75%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.lista-precos li
+{
+    width: 100%;
+    margin-bottom: 2px;
+    word-wrap: unset;
+}
+.lista-precos li:nth-child(1)
+{
+    text-decoration: line-through;
+}
+.lista-precos li:nth-child(2)
+{
+    font-size: 1.4rem;
+}
+.link-comprar
+{
+
+    justify-content: center;
+}
